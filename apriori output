@@ -1,0 +1,49 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -N 10 -T 0 -C 0.9 -D 0.05 -U 1.0 -M 0.1 -S -1.0 -c -1
+Relation:     weka_ready_dataset-weka.filters.unsupervised.attribute.Discretize-B10-M-1.0-Rfirst-last-precision6
+Instances:    820
+Attributes:   10
+              movie_name
+              language
+              year
+              genre
+              rating
+              runtime_(min)
+              director
+              lead_actor
+              lead_actress
+              review
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.95 (779 instances)
+Minimum metric <confidence>: 0.9
+Number of cycles performed: 1
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 4
+
+Size of set of large itemsets L(2): 6
+
+Size of set of large itemsets L(3): 4
+
+Size of set of large itemsets L(4): 1
+
+Best rules found:
+
+ 1. language=Telugu 800 ==> lead_actor=Aamir Khan 800    <conf:(1)> lift:(1.02) lev:(0.02) [15] conv:(15.61)
+ 2. language=Telugu 800 ==> lead_actress=Alia Bhatt 800    <conf:(1)> lift:(1.02) lev:(0.02) [18] conv:(18.54)
+ 3. language=Telugu 800 ==> review=All-time classic 800    <conf:(1)> lift:(1.02) lev:(0.02) [18] conv:(18.54)
+ 4. lead_actor=Aamir Khan lead_actress=Alia Bhatt 800 ==> language=Telugu 800    <conf:(1)> lift:(1.03) lev:(0.02) [19] conv:(19.51)
+ 5. language=Telugu lead_actress=Alia Bhatt 800 ==> lead_actor=Aamir Khan 800    <conf:(1)> lift:(1.02) lev:(0.02) [15] conv:(15.61)
+ 6. language=Telugu lead_actor=Aamir Khan 800 ==> lead_actress=Alia Bhatt 800    <conf:(1)> lift:(1.02) lev:(0.02) [18] conv:(18.54)
+ 7. language=Telugu 800 ==> lead_actor=Aamir Khan lead_actress=Alia Bhatt 800    <conf:(1)> lift:(1.03) lev:(0.02) [19] conv:(19.51)
+ 8. lead_actor=Aamir Khan review=All-time classic 800 ==> language=Telugu 800    <conf:(1)> lift:(1.03) lev:(0.02) [19] conv:(19.51)
+ 9. language=Telugu review=All-time classic 800 ==> lead_actor=Aamir Khan 800    <conf:(1)> lift:(1.02) lev:(0.02) [15] conv:(15.61)
+10. language=Telugu lead_actor=Aamir Khan 800 ==> review=All-time classic 800    <conf:(1)> lift:(1.02) lev:(0.02) [18] conv:(18.54)
+
